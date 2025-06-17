@@ -10,7 +10,7 @@ interface CardProps {
 const GameCard: React.FC<CardProps> = ({ id, name, image, handleClick }) => {
   return (
     <div
-      className="relative w-40 h-80 bg-neutral-900 text-gray-50 rounded-2xl shadow-inner shadow-gray-50 overflow-hidden cursor-pointer group hover:skew-x-6 hover:-skew-y-6 transition-transform duration-300"
+      className="relative w-44 h-80 bg-neutral-900 text-gray-50 rounded-2xl shadow-inner shadow-gray-50 overflow-hidden cursor-pointer group hover:skew-x-6 hover:-skew-y-6 transition-transform duration-300"
       onClick={handleClick}
     >
       <div className="relative z-10 flex flex-col justify-between items-center h-full p-4">

@@ -6,7 +6,7 @@ const Gameboard: React.FC = () => {
   const [highScore, setHighScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [clickedCards, setClickedCards] = useState<number[]>([]);
-  const [cardIds, setCardIds] = useState<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+  const [cardIds, setCardIds] = useState<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
   const [cardsData, setCardsData] = useState<{ id: number; name: string; image: string }[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -89,7 +89,7 @@ const Gameboard: React.FC = () => {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="flex flex-wrap justify-center gap-5 mt-5">
           {cardIds.map((charId) => {
             const cardData = cardsData.find((data) => data.id === charId) || { id: charId, name: '', image: '' };
             return (
