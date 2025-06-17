@@ -7,7 +7,7 @@ interface CardProps {
   handleClick: () => void;
 }
 
-const GameCard: React.FC<CardProps> = ({ id, name, image, handleClick }) => {
+const GameCard: React.FC<CardProps> = ({ name, image, handleClick }) => {
   return (
     <div
       className="relative w-44 h-80 bg-neutral-900 text-gray-50 rounded-2xl shadow-inner shadow-gray-50 overflow-hidden cursor-pointer group hover:skew-x-6 hover:-skew-y-6 transition-transform duration-300"
