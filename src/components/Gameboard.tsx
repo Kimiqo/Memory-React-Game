@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GameCard from './GameCard';
+import HowToPlay from './HowToPlay';
 
 const Gameboard: React.FC = () => {
   const [score, setScore] = useState(0);
@@ -74,6 +75,7 @@ const Gameboard: React.FC = () => {
 
   return (
     <div className="mx-5 my-6 rounded-lg border-2 border-gray-200 p-6">
+      <HowToPlay/>
       <div className="flex justify-between items-center mb-6">
         <p className="text-lg font-semibold">Score: {score}</p>
         <p className="text-lg font-semibold">High Score: {highScore}</p>
